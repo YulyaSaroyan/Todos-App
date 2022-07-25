@@ -1,0 +1,57 @@
+.Todo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Todo .TodoTask {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(117, 9, 110, 0.826);
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.Todo .TodoTask .inputEdit {
+    border: none;
+    padding: 5px;
+    background-color: rgb(221, 209, 229);
+    border-radius: 5px;
+}
+
+.Todo .TodoTask .inputEdit:focus {
+    outline: none;
+}
+
+.Todo .TodoTask .inputChekbox {
+    width: 20px;
+    height: 20px;
+}
+
+.Todo .TodoTask p {
+    color: white;
+    font-size: 18px;
+}
+
+.Todo .TodoTask svg {
+    transition: all .5s;
+}
+
+.Todo .TodoTask svg:hover {
+    color: rgb(249, 2, 2);
+}
+
+.Remove {
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+
+.taskIsDone {
+    text-decoration: 2px line-through ;
+}
