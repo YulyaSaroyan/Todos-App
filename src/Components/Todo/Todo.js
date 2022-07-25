@@ -15,7 +15,7 @@ const Todo = ({ todo }) => {
         <div className="Todo">
             <div className="TodoTask">
                 {
-                    todo.isInEditMode ? <input className="inputEdit" type="text" value={todo.title}  onChange={e => dispatch(startEditingTodoTask({id: todo.id, value: e.target.value}))} onBlur={e => dispatch(stopEditingTodoTask({id: todo.id, task: e.target.value, isEdit: false}))}/> : <p className={todo.completed ? 'taskIsDone' : ''}  onClick={() => dispatch(isInEditModeTodo({id: todo.id, isEdit: true}))}>{todo.title}</p>
+                    todo.isInEditMode ? <input className="inputEdit" type="text" value={todo.title} onChange={e => dispatch(startEditingTodoTask({id: todo.id, value: e.target.value}))} onBlur={e => dispatch(stopEditingTodoTask({id: todo.id, task: e.target.value, isEdit: false}))}/> : <p className={todo.completed ? 'taskIsDone' : ''}  onClick={() => dispatch(isInEditModeTodo({id: todo.id, isEdit: true}))}>{todo.title}</p>
                 }
                 {todo.isInEditMode ? '' : <input type="checkbox" className="inputChekbox" checked={todo.completed} onChange={e => dispatch(isCompleteTodo({id: todo.id, value: e.target.checked}))}/>}
                 <FontAwesomeIcon icon={faTrash} className="Remove" onClick={() => dispatch(deleteTodo({id: todo.id}))}/>

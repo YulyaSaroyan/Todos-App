@@ -45,15 +45,9 @@ const todosSlice = createSlice({
         }
     },
     extraReducers: {
-        [fetchingTodos.pending]: (state, action) => {
-            console.log('I am comming')
-        },
         [fetchingTodos.fulfilled]: (state, action) => {
             console.log('I am here')
             return [...state, ...action.payload]
-        },
-        [fetchingTodos.rejected]: (state, action) => {
-            console.log('fail')
         }
     }
 })

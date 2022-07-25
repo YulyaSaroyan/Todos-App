@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchingTodos, selectTodos } from '../../store/features/todos/todosSlice'
 import { useEffect } from 'react'
@@ -27,4 +26,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
