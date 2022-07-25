@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+
 import axios from 'axios'
 
 export const fetchingTodos = createAsyncThunk(
@@ -59,7 +60,8 @@ const todosSlice = createSlice({
 
 export const { addTodo, deleteTodo, isCompleteTodo, isInEditModeTodo, startEditingTodoTask, stopEditingTodoTask } = todosSlice.actions
 
-export default todosSlice.reducer
-
 export const selectTodos = state => state.todos
+
+export const todosReducer = todosSlice.reducer
+
 

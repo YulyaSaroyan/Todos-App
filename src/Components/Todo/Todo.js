@@ -1,11 +1,11 @@
 import { useDispatch} from "react-redux"
+
 import { deleteTodo, startEditingTodoTask, isCompleteTodo, isInEditModeTodo, stopEditingTodoTask } from "../../store/features/todos/todosSlice"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 import './Todo.css'
-
 
 const Todo = ({ todo }) => {
 

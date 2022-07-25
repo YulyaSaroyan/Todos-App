@@ -1,5 +1,5 @@
-import taskReducer from './features/task/taskSlice'
-import todosReducer from './features/todos/todosSlice'
+import { taskReducer } from './features/task/taskSlice'
+import { todosReducer } from './features/todos/todosSlice'
 import { configureStore } from '@reduxjs/toolkit'
 
 

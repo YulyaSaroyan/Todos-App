@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 const taskSlice = createSlice({
     name: 'task',
@@ -10,28 +10,8 @@ const taskSlice = createSlice({
     }
 })
 
-
 export const { changeTask } = taskSlice.actions
-
-export default taskSlice.reducer
 
 export const selectTask = state => state.task
 
-
-
-// export const taskReducer = (state = initialTask, action) => {
-//     switch (action.type) {
-//         case 'change':
-//             return  action.payload.task
-//         default:
-//             return state
-//     }
-// }
-
-// export const initialTask = ''
-
-// export const changeTask = ({ task }) => {
-//     return {type: 'change', payload: { task }}
-// }
-
-// export const selectTask = state => state.task
+export const taskReducer = taskSlice.reducer
